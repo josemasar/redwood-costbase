@@ -1,28 +1,28 @@
 import { Link, routes } from '@redwoodjs/router'
 import { Toaster } from '@redwoodjs/web/toast'
 
-type ${singularPascalName}LayoutProps = {
+type IdeaLayoutProps = {
   children: React.ReactNode
 }
 
-const ${pluralPascalName}Layout = ({ children }: ${singularPascalName}LayoutProps) => {
+const IdeasLayout = ({ children }: IdeaLayoutProps) => {
   return (
     <div className="rw-scaffold">
       <Toaster />
       <header className="rw-header">
         <h1 className="rw-heading rw-heading-primary">
           <Link
-            to={routes.${pluralRouteName}()}
+            to={routes.ideas()}
             className="rw-link"
           >
-            ${pluralPascalName}
+            Ideas
           </Link>
         </h1>
         <Link
-          to={routes.${newRouteName}()}
+          to={routes.newIdea()}
         >
          <div className="flex justify-center bg-indigo-100 hover:bg-indigo-300 rounded border-0 cursor-pointer leading-loose  text-gray-600 py-1 px-4  font-semibold text-s uppercase no-underline tracking-wide">
-          + New ${singularPascalName}
+          + New Idea
          </div>
         </Link>
       </header>
@@ -31,4 +31,4 @@ const ${pluralPascalName}Layout = ({ children }: ${singularPascalName}LayoutProp
   )
 }
 
-export default ${pluralPascalName}Layout
+export default IdeasLayout

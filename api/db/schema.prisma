@@ -19,7 +19,7 @@ model Idea {
   value       Int
   author      String
   vendor      String
-  active      Boolean  @default(false)
-  finish      Boolean  @default(false)
+  active      Boolean? @default(false)
+  finished    Boolean? @default(false)
   createdAt   DateTime @default(now())
 }
