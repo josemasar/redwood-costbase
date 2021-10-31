@@ -1,6 +1,8 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import NavBar from 'src/components/NavBar/NavBar'
+import Hero from 'src/components/Hero/Hero'
+import Features from 'src/components/Features/Features'
 
 const HomePage = () => {
   return (
@@ -12,6 +14,8 @@ const HomePage = () => {
         You can look at this documentation for best practices : https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets */
       />
       <NavBar />
+      <Hero />
+      <Features />
     </>
   )
 }
