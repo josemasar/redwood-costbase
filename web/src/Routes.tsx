@@ -13,6 +13,7 @@ import IdeasLayout from 'src/layouts/IdeasLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/" page={HomePage} name="home" />
       <Set wrap={IdeasLayout}>
         <Route path="/ideas/new" page={IdeaNewIdeaPage} name="newIdea" />
         <Route path="/ideas/{id:Int}/edit" page={IdeaEditIdeaPage} name="editIdea" />
