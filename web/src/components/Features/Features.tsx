@@ -1,6 +1,6 @@
 const features = [
   {
-    name: 'Cut costs',
+    name: 'Cut unnecesary costs',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     /* icon: '/public/features/computer.jpg', */

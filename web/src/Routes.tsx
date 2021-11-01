@@ -14,11 +14,12 @@ const Routes = () => {
   return (
     <Router>
       <Route path="/" page={HomePage} name="home" />
+      <Route path="/admin" page={AdminPage} name="/admin" />
       <Set wrap={IdeasLayout}>
-        <Route path="/ideas/new" page={IdeaNewIdeaPage} name="newIdea" />
-        <Route path="/ideas/{id:Int}/edit" page={IdeaEditIdeaPage} name="editIdea" />
-        <Route path="/ideas/{id:Int}" page={IdeaIdeaPage} name="idea" />
-        <Route path="/ideas" page={IdeaIdeasPage} name="ideas" />
+        <Route path="/admin/ideas/new" page={IdeaNewIdeaPage} name="newIdea" />
+        <Route path="/admin/ideas/{id:Int}/edit" page={IdeaEditIdeaPage} name="editIdea" />
+        <Route path="/admin/ideas/{id:Int}" page={IdeaIdeaPage} name="idea" />
+        <Route path="/admin/ideas" page={IdeaIdeasPage} name="ideas" />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
