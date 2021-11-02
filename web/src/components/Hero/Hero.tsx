@@ -6,8 +6,8 @@ const Hero = () => {
     bg-wave bg-no-repeat"
       >
         <h1 className="max-w-7xl mx-auto text-7xl py-32 md:text-8xl font-bold tracking-wider text-white text-center align-middle">
-          Rapidly control <strong className="text-yellow-400">cost</strong> of
-          industrial goods
+          Rapidly control <span className="text-pink">cost</span> of industrial
+          goods
         </h1>
       </div>
     </>

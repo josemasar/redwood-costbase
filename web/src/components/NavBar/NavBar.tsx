@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 const NavBar = () => {
   return (
     <>
@@ -7,8 +9,9 @@ const NavBar = () => {
             <p className="ml-20 text-4xl font-bold text-white">Logo</p>
           </div>
           <div className="container flex justify-end">
-            <button className="btn-blue mr-8">Log in</button>
-            <button className="btn-blue">Register</button>
+            <Link to={routes.login()}>
+              <button className="btn-blue mr-14">Log in</button>
+            </Link>
           </div>
         </div>
       </div>

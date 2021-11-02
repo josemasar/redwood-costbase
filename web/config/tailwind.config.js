@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   purge: ['src/**/*.{js,jsx,ts,tsx}'],
@@ -6,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         wave: "url('../public/wave-haikei.svg')",
+        layered: "url('../public/layered.svg')",
       },
     },
   },
