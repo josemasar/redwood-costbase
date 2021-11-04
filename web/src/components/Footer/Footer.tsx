@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-100 text-black font-medium">
+    <div className="w-full bg-gray-100 text-black font-medium pt-20">
       <div className="xl:px-40 pb-12  lg:px-20 md:px-10 sm:px-5 px-10">
-        <div className="w-full pt-12 flex flex-col sm:flex-row space-y-2 justify-start">
+        <div className="w-full pt-10 flex flex-col sm:flex-row space-y-2 justify-start">
           <div className="w-full sm:w-2/5 pr-6 flex flex-col space-y-4">
             Logo
           </div>
