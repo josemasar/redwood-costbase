@@ -18,7 +18,7 @@ const ResetPasswordPage = ({ resetToken }) => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate(routes.admin())
+      navigate(routes.dashboard())
     }
   }, [isAuthenticated])
 

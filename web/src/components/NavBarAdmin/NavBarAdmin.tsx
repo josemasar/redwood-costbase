@@ -15,12 +15,12 @@ const NavBarAdmin = () => {
       <Navigation.Section
         items={[
           {
-            url: '/admin',
+            url: '/dashboard',
             label: 'Dashboard',
             icon: HomeMajor,
           },
           {
-            url: '/admin/ideas',
+            url: '/dashboard/ideas',
             label: 'Ideas',
             icon: HintMajor,
             secondaryAction: {
@@ -30,17 +30,17 @@ const NavBarAdmin = () => {
             },
           },
           {
-            url: '/admin/plans',
+            url: '/dashboard/plans',
             label: 'Plans',
             icon: ChecklistMajor,
           },
           {
-            url: '/admin/tasks',
+            url: '/dashboard/tasks',
             label: 'Tasks',
             icon: AppsMajor,
           },
           {
-            url: '/admin/results',
+            url: '/dashboard/results',
             label: 'Results',
             icon: AnalyticsMajor,
           },
@@ -49,7 +49,7 @@ const NavBarAdmin = () => {
       <Navigation.Section
         items={[
           {
-            url: '/admin/settings',
+            url: '/dashboard/settings',
             label: 'Settings',
             icon: SettingsMajor,
           },
