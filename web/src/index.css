@@ -13,6 +13,6 @@
  */
  @layer components {
   .btn-blue {
-    @apply h-10 w-24 mt-4 mr-12 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply h-10 w-24 mt-5 mr-12 bg-blue-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }

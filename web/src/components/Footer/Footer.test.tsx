@@ -1,11 +1,11 @@
 import { render } from '@redwoodjs/testing/web'
 
-import AdminPage from './AdminPage'
+import Footer from './Footer'
 
-describe('AdminPage', () => {
+describe('Footer', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<AdminPage />)
+      render(<Footer />)
     }).not.toThrow()
   })
 })

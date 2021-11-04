@@ -4,7 +4,7 @@ import { Page, CalloutCard, Layout, MediaCard } from '@shopify/polaris'
 import AppLayout from 'src/layouts/AppLayout/AppLayout'
 import '@shopify/polaris/build/esm/styles.css'
 
-const AdminPage = () => {
+const DashboardPage = () => {
   return (
     <>
       <MetaTags
@@ -45,4 +45,4 @@ const AdminPage = () => {
   )
 }
 
-export default AdminPage
+export default DashboardPage
