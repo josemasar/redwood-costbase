@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="80" viewBox="0 0 250 80">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100px;
+        fill: #c62368;
+        text-anchor: middle;
+        font-family: "Outrun future";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="costbase" class="cls-1" transform="translate(122.694 51.632) scale(0.416)"><tspan x="0">costbase</tspan></text>
+</svg>

@@ -1,29 +1,25 @@
 const features = [
   {
     name: 'Cut unnecesary costs',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     /* icon: '/public/features/computer.jpg', */
     src: '/features/cutcosts.jpg',
   },
   {
     name: 'Sign better contracts',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     /* icon: '/public/features/computer.jpg', */
     src: '/features/contract.jpg',
   },
   {
     name: 'Control the evolution',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     /* icon: '/public/features/computer.jpg', */
     src: '/features/evolution.jpg',
   },
   {
     name: 'Understand your opportunities',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     /* icon: '/public/features/computer.jpg', */
     src: '/features/graph.jpg',
   },
@@ -33,37 +29,37 @@ const Features = () => {
   return (
     <>
       <div className="py-12 bg-white">
-        <div className="max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-10">
-          <div className="lg:text-center">
-            <h2 className="text-base text-xl text-indigo-600 font-semibold tracking-wide uppercase">
+        <div className="max-w-7xl min-h-full mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-48">
+          <div className="text-center">
+            <h2 className="text-3xl text-indigo-600 font-semibold tracking-wide uppercase">
               Costbase
             </h2>
-            <p className="mt-2 text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+            <p className="mt-2 text-5xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               A better way to improve profit
             </p>
-            <p className="mt-4 max-w-3xl text-2xl text-gray-500 lg:mx-auto">
+            <p className="mt-8 max-w-6xl text-3xl text-gray-500 lg:mx-auto">
               The world´s smartest solution to lower costs in high complex
               assembled products
             </p>
           </div>
-          <div className="mt-14">
-            <dl className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-14 md:gap-y-16">
+          <div className="mt-24">
+            <dl className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-28 md:gap-y-20">
               {features.map((feature) => (
                 <div key={feature.name} className="relative">
                   <dt>
-                    <div className="absolute flex items-center justify-center h-200 w-200 rounded-md bg-indigo-500 text-white">
+                    <div className="absolute flex items-center justify-left h-100 w-100 rounded-md">
                       <img
                         src={feature.src}
-                        width="140"
-                        height="140"
+                        width="120"
+                        height="120"
                         alt="..."
                       />
                     </div>
-                    <p className="ml-40 text-2xl font-semibold leading-6 font-medium text-gray-900">
+                    <p className="flex ml-60 text-3xl font-semibold text-gray-900">
                       {feature.name}
                     </p>
                   </dt>
-                  <dd className="mt-2 ml-40 text-lg text-gray-500">
+                  <dd className="flex mt-10 ml-60 text-lg text-gray-500">
                     {feature.description}
                   </dd>
                 </div>
