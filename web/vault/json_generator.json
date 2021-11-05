@@ -1,0 +1,12 @@
+// https://extendsclass.com/json-generator.html
+
+{
+  "product": choice('A','B','C','D','E'),
+  "title": regex(/title/),
+  "description": regex(/description/),
+  "value": random(10, 1000),
+  "author": choice('E1','E2','E3','E4','E5'),
+  "vendor": choice('V1','V2','V3','V4','V5'),
+  "active": randomBool(),
+  "finished": randomBool(),
+}

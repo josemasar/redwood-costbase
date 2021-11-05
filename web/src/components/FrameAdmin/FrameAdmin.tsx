@@ -1,6 +1,7 @@
 import { Frame, TopBar } from '@shopify/polaris'
 import NavBarAdmin from 'src/components/NavBarAdmin'
 import { useState, useCallback } from 'react'
+import '@shopify/polaris/build/esm/styles.css'
 
 const FrameAdmin = ({ children }) => {
   const [mobileNavigationActive, setMobileNavigationActive] = useState(false)

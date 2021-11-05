@@ -24,7 +24,7 @@ const NavBarAdmin = () => {
             label: 'Ideas',
             icon: HintMajor,
             secondaryAction: {
-              url: '/admin/ideas/new',
+              url: '/dashboard/ideas/new',
               accessibilityLabel: 'Add an idea',
               icon: CirclePlusOutlineMinor,
             },
