@@ -21,19 +21,12 @@ const CardDashboard1 = ({ ideas }) => {
           url: '/dashboard/ideas/new',
         }}
       >
-        <Card.Header
-          actions={[
-            {
-              content: 'Total Sales',
-            },
-          ]}
-          title="Ideas"
-        >
+        <Card.Header title="Ideas">
           <Popover
             active={false}
             activator={
               <Button disclosure plain>
-                View Sales
+                View Results
               </Button>
             }
             onClose={() => {}}

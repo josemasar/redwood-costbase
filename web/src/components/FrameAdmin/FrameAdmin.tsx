@@ -21,6 +21,9 @@ const FrameAdmin = ({ children }) => {
 
   const userMenuActions = [
     {
+      items: [{ content: 'User Preferences' }],
+    },
+    {
       items: [{ content: 'Log out' }],
     },
   ]

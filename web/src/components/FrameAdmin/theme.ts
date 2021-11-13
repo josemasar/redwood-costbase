@@ -3,7 +3,7 @@ const theme = {
     width: 150,
     topBarSource: '/static-files/costbase_logo.svg',
     url: '/',
-    accessibilityLabel: 'rw-challenge',
+    accessibilityLabel: 'costbase',
   },
 }
 
