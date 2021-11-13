@@ -1,10 +1,10 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import NavBar from 'src/components/NavBar/NavBar'
-import Hero from 'src/components/Hero/Hero'
-import Features from 'src/components/Features/Features'
-import StartNow from 'src/components/StartNow/StartNow'
-import Footer from 'src/components/Footer/Footer'
+import Hero from 'src/components/Home/Hero/Hero'
+import Features from 'src/components/Home/Features/Features'
+import StartNow from 'src/components/Home/StartNow/StartNow'
+import Footer from 'src/components/Home/Footer/Footer'
 
 const HomePage = () => {
   return (
