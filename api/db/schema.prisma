@@ -22,6 +22,7 @@ model Idea {
   active      Boolean? @default(false)
   finished    Boolean? @default(false)
   createdAt   DateTime @default(now())
+  tasks       Task[]
 }
 
 model User {
@@ -31,4 +32,15 @@ model User {
   salt                String // <─┼─ add these lines
   resetToken          String? // <─┤
   resetTokenExpiresAt DateTime? // <─┘
+}
+
+//Idea has a one-to-many relation with Task
+model Task {
+  id        Int      @id @default(autoincrement())
+  idea      Idea     @relation(fields: [ideaId], references: [id])
+  ideaId    Int
+  owner     String
+  status    String
+  finished  Boolean? @default(false)
+  createdAt DateTime @default(now())
 }
