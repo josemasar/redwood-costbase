@@ -2,14 +2,14 @@ import { useMutation } from '@redwoodjs/web'
 import { toast } from '@redwoodjs/web/toast'
 import { Link, routes } from '@redwoodjs/router'
 
-import { QUERY } from 'src/components/Idea/IdeasCell'
+import { QUERY } from 'src/components/Task/TasksCell'
 
 import { AiFillDelete } from 'react-icons/ai'
 import { RiEdit2Fill } from 'react-icons/ri'
 
-const DELETE_IDEA_MUTATION = gql`
-  mutation DeleteIdeaMutation($id: Int!) {
-    deleteIdea(id: $id) {
+const DELETE_TASK_MUTATION = gql`
+  mutation DeleteTaskMutation($id: Int!) {
+    deleteTask(id: $id) {
       id
     }
   }
@@ -41,10 +41,10 @@ const checkboxInputTag = (checked) => {
   return <input type="checkbox" checked={checked} disabled />
 }
 
-const IdeasList = ({ ideas }) => {
-  const [deleteIdea] = useMutation(DELETE_IDEA_MUTATION, {
+const TasksList = ({ tasks }) => {
+  const [deleteTask] = useMutation(DELETE_TASK_MUTATION, {
     onCompleted: () => {
-      toast.success('Idea deleted')
+      toast.success('Task deleted')
     },
     onError: (error) => {
       toast.error(error.message)
@@ -57,8 +57,8 @@ const IdeasList = ({ ideas }) => {
   })
 
   const onDeleteClick = (id) => {
-    if (confirm('Are you sure you want to delete idea ' + id + '?')) {
-      deleteIdea({ variables: { id } })
+    if (confirm('Are you sure you want to delete task ' + id + '?')) {
+      deleteTask({ variables: { id } })
     }
   }
 
@@ -80,7 +80,7 @@ const IdeasList = ({ ideas }) => {
                     scope="col"
                     className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
                   >
-                    Product
+                    Idea id
                   </th>
                   <th
                     scope="col"
@@ -92,25 +92,19 @@ const IdeasList = ({ ideas }) => {
                     scope="col"
                     className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
                   >
-                    Value
+                    Description
                   </th>
                   <th
                     scope="col"
                     className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
                   >
-                    Author
+                    Owner
                   </th>
                   <th
                     scope="col"
                     className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
                   >
-                    Vendor
-                  </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
-                  >
-                    Active
+                    Status
                   </th>
                   <th
                     scope="col"
@@ -130,39 +124,36 @@ const IdeasList = ({ ideas }) => {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {ideas.map((idea) => (
-                  <tr key={idea.id}>
+                {tasks.map((task) => (
+                  <tr key={task.id}>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.id)}
+                      {truncate(task.id)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.product)}
+                      {truncate(task.ideaId)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.title)}
+                      {truncate(task.title)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.value)}
+                      {truncate(task.description)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.author)}
+                      {truncate(task.owner)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {truncate(idea.vendor)}
+                      {truncate(task.status)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {checkboxInputTag(idea.active)}
+                      {checkboxInputTag(task.finished)}
                     </td>
                     <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {checkboxInputTag(idea.finished)}
-                    </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
-                      {timeTag(idea.createdAt)}
+                      {timeTag(task.createdAt)}
                     </td>
                     <td className="py-4 whitespace-nowrap text-xl font-medium">
                       <Link
-                        to={routes.idea({ id: idea.id })}
-                        title={'Show idea ' + idea.id + ' detail'}
+                        to={routes.task({ id: task.id })}
+                        title={'Show task ' + task.id + ' detail'}
                         className="text-indigo-600 hover:text-indigo-900"
                       >
                         <span className="px-2 inline-flex font-semibold rounded-full bg-indigo-100">
@@ -172,8 +163,8 @@ const IdeasList = ({ ideas }) => {
                     </td>
                     <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
                       <Link
-                        to={routes.editIdea({ id: idea.id })}
-                        title={'Edit idea ' + idea.id}
+                        to={routes.editTask({ id: task.id })}
+                        title={'Edit task ' + task.id}
                         className=" hover:text-indigo-900"
                       >
                         <RiEdit2Fill />
@@ -182,8 +173,8 @@ const IdeasList = ({ ideas }) => {
                     <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
                       <button
                         type="button"
-                        title={'Delete idea ' + idea.id}
-                        onClick={() => onDeleteClick(idea.id)}
+                        title={'Delete task ' + task.id}
+                        onClick={() => onDeleteClick(task.id)}
                         className="hover:text-indigo-900"
                       >
                         <AiFillDelete />
@@ -200,4 +191,4 @@ const IdeasList = ({ ideas }) => {
   )
 }
 
-export default IdeasList
+export default TasksList
