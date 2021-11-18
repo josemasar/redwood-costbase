@@ -1,4 +1,3 @@
-import type { FindIdeas } from 'types/graphql'
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
 import { Link, routes } from '@redwoodjs/router'
@@ -6,7 +5,17 @@ import { Link, routes } from '@redwoodjs/router'
 import Dashboard from 'src/components/Dashboard/Dashboard'
 
 export const QUERY = gql`
-  query FindIdeas {
+  query {
+    tasks {
+      id
+      ideaId
+      title
+      description
+      owner
+      status
+      finished
+      createdAt
+    }
     ideas {
       id
       product
@@ -39,6 +48,6 @@ export const Failure = ({ error }: CellFailureProps) => (
   <div className="rw-cell-error">{error.message}</div>
 )
 
-export const Success = ({ ideas }: CellSuccessProps<FindIdeas>) => {
-  return <Dashboard ideas={ideas} />
+export const Success = ({ ideas, tasks }: CellSuccessProps) => {
+  return <Dashboard ideas={ideas} tasks={tasks} />
 }

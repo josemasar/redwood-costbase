@@ -7,7 +7,7 @@ import CardDashboard1 from 'src/components/Dashboard/CardDashboard1/CardDashboar
 import BarChartIdeas from '../BarChartIdeas/BarChartIdeas'
 import BarChartTasks from '../BarChartTasks/BarChartTasks'
 
-const Dashboard = ({ ideas }) => {
+const Dashboard = ({ ideas, tasks }) => {
   return (
     <>
       <MetaTags
@@ -21,7 +21,7 @@ const Dashboard = ({ ideas }) => {
           <Layout>
             <Layout.Section oneHalf>
               <Card.Section>
-                <CardDashboard1 ideas={ideas} />
+                <CardDashboard1 ideas={ideas} tasks={tasks} />
               </Card.Section>
             </Layout.Section>
             <div className="max-w-7xl">
