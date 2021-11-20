@@ -3,7 +3,7 @@ import { MetaTags } from '@redwoodjs/web'
 import { Page, Layout, Card } from '@shopify/polaris'
 import AppLayout from 'src/layouts/AppLayout/AppLayout'
 import '@shopify/polaris/build/esm/styles.css'
-import CardDashboard1 from 'src/components/Dashboard/CardDashboard1/CardDashboard1'
+import CardDashboardMain from 'src/components/Dashboard/CardDashboardMain/CardDashboardMain'
 import BarChartIdeas from '../BarChartIdeas/BarChartIdeas'
 import BarChartTasks from '../BarChartTasks/BarChartTasks'
 
@@ -21,7 +21,7 @@ const Dashboard = ({ ideas, tasks }) => {
           <Layout>
             <Layout.Section oneHalf>
               <Card.Section>
-                <CardDashboard1 ideas={ideas} tasks={tasks} />
+                <CardDashboardMain ideas={ideas} tasks={tasks} />
               </Card.Section>
             </Layout.Section>
             <div className="max-w-7xl">

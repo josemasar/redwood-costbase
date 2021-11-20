@@ -3,7 +3,6 @@ import { Card, Popover, Button, TextContainer, List } from '@shopify/polaris'
 const CardDashboard1 = ({ ideas, tasks }) => {
   const sumIdeasValue = ideas.reduce((a, { value }) => a + value, 0)
   const activeIdeas = ideas.filter((x) => x.active)
-  console.log(activeIdeas)
   const sumTasksValue = activeIdeas.reduce((a, { value }) => a + value, 0)
   return (
     <div>
@@ -40,7 +39,7 @@ const CardDashboard1 = ({ ideas, tasks }) => {
           <List>
             <List.Item>Number of Ideas</List.Item>
             <p>{ideas.length}</p>
-            <List.Item>Total value in progress</List.Item>
+            <List.Item>Total ideas value</List.Item>
             <p>
               {sumIdeasValue.toLocaleString('en-US', {
                 style: 'currency',
@@ -62,9 +61,12 @@ const CardDashboard1 = ({ ideas, tasks }) => {
             </p>
           </List>
         </Card.Section>
-        <Card.Section title="Total cost reduction accomplished">
+        <Card.Section title="Cost reduction accomplished">
           <List>
-            <List.Item>1500$</List.Item>
+            <List.Item>Number of ideas completed</List.Item>
+            <p>0</p>
+            <List.Item>Total cost reduction value</List.Item>
+            <p>0$</p>
           </List>
         </Card.Section>
       </Card>
