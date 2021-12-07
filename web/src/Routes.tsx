@@ -8,6 +8,7 @@
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
 import { Set, Router, Route, Private } from '@redwoodjs/router'
+import TasksLayout from 'src/layouts/TasksLayout'
 import IdeasLayout from 'src/layouts/IdeasLayout'
 
 const Routes = () => {
@@ -25,6 +26,12 @@ const Routes = () => {
           <Route path="/dashboard/ideas/{id:Int}/edit" page={IdeaEditIdeaPage} name="editIdea" />
           <Route path="/dashboard/ideas/{id:Int}" page={IdeaIdeaPage} name="idea" />
           <Route path="/dashboard/ideas" page={IdeaIdeasPage} name="ideas" />
+        </Set>
+        <Set wrap={TasksLayout}>
+          <Route path="/tasks/new" page={TaskNewTaskPage} name="newTask" />
+          <Route path="/dashboard/tasks/{id:Int}/edit" page={TaskEditTaskPage} name="editTask" />
+          <Route path="/dashboard/tasks/{id:Int}" page={TaskTaskPage} name="task" />
+          <Route path="/dashboard/tasks" page={TaskTasksPage} name="tasks" />
         </Set>
       </Private>
       <Route notfound page={NotFoundPage} />

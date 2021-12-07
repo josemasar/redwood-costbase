@@ -1,9 +1,9 @@
 const theme = {
   logo: {
-    width: 32,
-    topBarSource: '/public/favicon.png',
+    width: 150,
+    topBarSource: '/static-files/costbase_logo.svg',
     url: '/',
-    accessibilityLabel: 'rw-challenge',
+    accessibilityLabel: 'costbase',
   },
 }
 

@@ -2,7 +2,6 @@ import { Navigation } from '@shopify/polaris'
 import {
   HomeMajor,
   HintMajor,
-  ChecklistMajor,
   CirclePlusOutlineMinor,
   AppsMajor,
   AnalyticsMajor,
@@ -28,11 +27,6 @@ const NavBarAdmin = () => {
               accessibilityLabel: 'Add an idea',
               icon: CirclePlusOutlineMinor,
             },
-          },
-          {
-            url: '/dashboard/plans',
-            label: 'Plans',
-            icon: ChecklistMajor,
           },
           {
             url: '/dashboard/tasks',
