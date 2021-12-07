@@ -12,7 +12,10 @@ import { db } from './db'
 //      model accessor ─┘      unique id field name ─┘
 
 export const getCurrentUser = async (session) => {
-  return await db.user.findUnique({ where: { id: session.id } })
+  return await db.user.findUnique({
+    where: { id: session.id },
+    select: { id: true }
+  })
 }
 
 /**
