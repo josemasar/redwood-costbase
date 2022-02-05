@@ -8,12 +8,20 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.39.3"
+    "@redwoodjs/core": "^0.44.0"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
-    "root": true
-  },
+    "root": true,
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+  }
+},
   "engines": {
     "node": ">=14.17 <=16.x",
     "yarn": "1.x"
