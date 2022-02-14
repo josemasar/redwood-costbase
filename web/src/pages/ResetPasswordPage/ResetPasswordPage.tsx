@@ -35,7 +35,7 @@ const ResetPasswordPage = ({ resetToken }) => {
     validateToken()
   }, [])
 
-  const passwordRef = useRef()
+  const passwordRef = useRef<HTMLInputElement>()
   useEffect(() => {
     passwordRef.current.focus()
   }, [])
