@@ -13,10 +13,10 @@
     ]
   },
   "dependencies": {
-    "@redwoodjs/auth": "^0.39.4",
-    "@redwoodjs/forms": "^0.39.4",
-    "@redwoodjs/router": "^0.39.4",
-    "@redwoodjs/web": "^0.39.4",
+    "@redwoodjs/auth": "^0.47.0",
+    "@redwoodjs/forms": "^0.47.0",
+    "@redwoodjs/router": "^0.47.0",
+    "@redwoodjs/web": "^0.47.0",
     "@shopify/polaris": "^8.2.2",
     "@shopify/polaris-icons": "^4.17.0",
     "prop-types": "15.7.2",
