@@ -1,6 +1,6 @@
 # Costbase
 
-> **NOTICE:** Costbase is project in development to create a SaaS solution to manage cost in industrial companies with complex assembled products.
+> **NOTICE:** Costbase is a project in development to create a SaaS solution to manage cost in industrial companies with complex assembled products.
 > The project started as a #365DaysOfCode challenge by @josemasar in May 2021. [Github profile](https://github.com/josemasar/)
 > The intend is to release a Minimum Viable Product in 2022.
 > If you are insterested in contributing, please get in touch!
