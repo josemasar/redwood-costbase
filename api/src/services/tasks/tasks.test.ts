@@ -2,6 +2,7 @@ import { tasks, task, createTask, updateTask, deleteTask } from './tasks'
 import type { StandardScenario } from './tasks.scenarios'
 
 describe('tasks', () => {
+  jest.setTimeout(30000)
   scenario('returns all tasks', async (scenario: StandardScenario) => {
     const result = await tasks()
 

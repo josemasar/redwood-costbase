@@ -2,6 +2,7 @@ import { ideas, idea, createIdea, updateIdea, deleteIdea } from './ideas'
 import type { StandardScenario } from './ideas.scenarios'
 
 describe('ideas', () => {
+  jest.setTimeout(30000)
   scenario('returns all ideas', async (scenario: StandardScenario) => {
     const result = await ideas()
 
