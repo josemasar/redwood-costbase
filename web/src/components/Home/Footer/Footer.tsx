@@ -2,20 +2,20 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-200">
-        <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <img
                 src="/static-files/costbase_logo.svg"
                 alt="costbase logo"
-                className="block w-32 h-10 rounded-lg"
+                className="block h-10 w-32 rounded-lg"
               />
 
-              <p className="max-w-xs mt-4 text-sm text-gray-500">
+              <p className="mt-4 max-w-xs text-sm text-gray-500">
                 Understand Your Products. <br /> Increase benefit.
               </p>
 
-              <div className="flex mt-8 space-x-6 text-gray-500">
+              <div className="mt-8 flex space-x-6 text-gray-500">
                 <a
                   className="hover:opacity-75"
                   href=""
@@ -25,7 +25,7 @@ const Footer = () => {
                   <span className="sr-only"> Facebook </span>
 
                   <svg
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -47,7 +47,7 @@ const Footer = () => {
                   <span className="sr-only"> Instagram </span>
 
                   <svg
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -69,7 +69,7 @@ const Footer = () => {
                   <span className="sr-only"> Twitter </span>
 
                   <svg
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -87,7 +87,7 @@ const Footer = () => {
                   <span className="sr-only"> GitHub </span>
 
                   <svg
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -109,7 +109,7 @@ const Footer = () => {
                   <span className="sr-only"> Dribbble </span>
 
                   <svg
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -124,11 +124,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
                 <p className="font-medium">Company</p>
 
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
                   <a className="hover:opacity-75" href="">
                     {' '}
                     About{' '}
@@ -151,7 +151,7 @@ const Footer = () => {
               <div>
                 <p className="font-medium">Services</p>
 
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
                   <a className="hover:opacity-75" href="">
                     {' '}
                     1on1 Coaching{' '}
@@ -178,7 +178,7 @@ const Footer = () => {
               <div>
                 <p className="font-medium">Helpful Links</p>
 
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
                   <a className="hover:opacity-75" href="">
                     {' '}
                     Contact{' '}
@@ -197,7 +197,7 @@ const Footer = () => {
               <div>
                 <p className="font-medium">Legal</p>
 
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
                   <a className="hover:opacity-75" href="">
                     {' '}
                     Privacy Policy{' '}

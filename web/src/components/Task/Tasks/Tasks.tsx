@@ -68,56 +68,56 @@ const TasksList = ({ tasks }) => {
     <>
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+          <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+            <div className="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Id
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Idea id
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Title
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Description
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Owner
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Status
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Finished
                     </th>
                     <th
                       scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                     >
                       Created at
                     </th>
@@ -126,45 +126,45 @@ const TasksList = ({ tasks }) => {
                     <th>&nbsp;</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200 bg-white">
                   {tasks.map((task) => (
                     <tr key={task.id}>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.id)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.ideaId)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.title)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.description)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.owner)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {truncate(task.status)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {checkboxInputTag(task.finished)}
                       </td>
-                      <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                         {timeTag(task.createdAt)}
                       </td>
-                      <td className="py-4 whitespace-nowrap text-xl font-medium">
+                      <td className="whitespace-nowrap py-4 text-xl font-medium">
                         <Link
                           to={routes.task({ id: task.id })}
                           title={'Show task ' + task.id + ' detail'}
                           className="text-indigo-600 hover:text-indigo-900"
                         >
-                          <span className="px-2 inline-flex font-semibold rounded-full bg-indigo-100">
+                          <span className="inline-flex rounded-full bg-indigo-100 px-2 font-semibold">
                             Show
                           </span>
                         </Link>
                       </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
+                      <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
                         <Link
                           to={routes.editTask({ id: task.id })}
                           title={'Edit task ' + task.id}
@@ -173,7 +173,7 @@ const TasksList = ({ tasks }) => {
                           <RiEdit2Fill />
                         </Link>
                       </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
+                      <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
                         <button
                           type="button"
                           title={'Delete task ' + task.id}

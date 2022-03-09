@@ -65,62 +65,62 @@ const IdeasList = ({ ideas }) => {
   return (
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+          <div className="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Id
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Product
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Title
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Value
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Author
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Vendor
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Active
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Finished
                   </th>
                   <th
                     scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold text-gray-500 uppercase tracking-wider"
+                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
                   >
                     Created at
                   </th>
@@ -129,48 +129,48 @@ const IdeasList = ({ ideas }) => {
                   <th>&nbsp;</th>
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200 bg-white">
                 {ideas.map((idea) => (
                   <tr key={idea.id}>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.id)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.product)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.title)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.value)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.author)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {truncate(idea.vendor)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {checkboxInputTag(idea.active)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {checkboxInputTag(idea.finished)}
                     </td>
-                    <td className="px-2 py-4 whitespace-nowrap text-xl text-gray-500">
+                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
                       {timeTag(idea.createdAt)}
                     </td>
-                    <td className="py-4 whitespace-nowrap text-xl font-medium">
+                    <td className="whitespace-nowrap py-4 text-xl font-medium">
                       <Link
                         to={routes.idea({ id: idea.id })}
                         title={'Show idea ' + idea.id + ' detail'}
                         className="text-indigo-600 hover:text-indigo-900"
                       >
-                        <span className="px-2 inline-flex font-semibold rounded-full bg-indigo-100">
+                        <span className="inline-flex rounded-full bg-indigo-100 px-2 font-semibold">
                           Show
                         </span>
                       </Link>
                     </td>
-                    <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
+                    <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
                       <Link
                         to={routes.editIdea({ id: idea.id })}
                         title={'Edit idea ' + idea.id}
@@ -179,7 +179,7 @@ const IdeasList = ({ ideas }) => {
                         <RiEdit2Fill />
                       </Link>
                     </td>
-                    <td className="px-3 py-4 whitespace-nowrap text-2xl font-medium">
+                    <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
                       <button
                         type="button"
                         title={'Delete idea ' + idea.id}

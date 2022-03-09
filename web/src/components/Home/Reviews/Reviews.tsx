@@ -2,13 +2,13 @@ const Reviews = () => {
   return (
     <div>
       <section className="bg-gray-100">
-        <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
-          <div className="max-w-xl mx-auto text-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="mx-auto max-w-xl text-center">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Read trusted reviews from our customers
             </h2>
 
-            <p className="max-w-lg mx-auto mt-4 text-gring-offset-warm-gray-500">
+            <p className="text-gring-offset-warm-gray-500 mx-auto mt-4 max-w-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Aspernatur praesentium natus sapiente commodi. Aliquid sunt
               tempore iste repellendus explicabo dignissimos placeat, autem
@@ -16,15 +16,15 @@ const Reviews = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3 sm:gap-16">
+          <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
             <div>
               <img
                 src="https://www.hyperui.dev/photos/man-4.jpeg"
                 alt=""
-                className="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
-              <blockquote className="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl">
+              <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
                 <p className="text-lg font-bold text-gray-700">Katie</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
                   Digital Marketing at Studio
@@ -34,10 +34,10 @@ const Reviews = () => {
                   Deserunt voluptatem alias ut provident sapiente repellendus.
                 </p>
 
-                <div className="flex space-x-0.5 justify-center mt-8 text-green-500">
+                <div className="mt-8 flex justify-center space-x-0.5 text-green-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -45,7 +45,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -53,7 +53,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -61,7 +61,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -69,7 +69,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -83,10 +83,10 @@ const Reviews = () => {
               <img
                 src="https://www.hyperui.dev/photos/man-4.jpeg"
                 alt=""
-                className="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
-              <blockquote className="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl">
+              <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
                 <p className="text-lg font-bold text-gray-700">Katie</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
                   Digital Marketing at Studio
@@ -96,10 +96,10 @@ const Reviews = () => {
                   Deserunt voluptatem alias ut provident sapiente repellendus.
                 </p>
 
-                <div className="flex space-x-0.5 justify-center mt-8 text-green-500">
+                <div className="mt-8 flex justify-center space-x-0.5 text-green-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -107,7 +107,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -115,7 +115,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -123,7 +123,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -131,7 +131,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -144,10 +144,10 @@ const Reviews = () => {
               <img
                 src="https://www.hyperui.dev/photos/man-4.jpeg"
                 alt=""
-                className="object-cover w-24 h-24 mx-auto rounded-full shadow-xl"
+                className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
-              <blockquote className="flex flex-col justify-between p-12 -mt-6 text-center rounded-lg shadow-xl">
+              <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
                 <p className="text-lg font-bold text-gray-700">Katie</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
                   Digital Marketing at Studio
@@ -157,10 +157,10 @@ const Reviews = () => {
                   Deserunt voluptatem alias ut provident sapiente repellendus.
                 </p>
 
-                <div className="flex space-x-0.5 justify-center mt-8 text-green-500">
+                <div className="mt-8 flex justify-center space-x-0.5 text-green-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -168,7 +168,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -176,7 +176,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -184,7 +184,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -192,7 +192,7 @@ const Reviews = () => {
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="h-6 w-6"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >

@@ -18,7 +18,7 @@ const TasksLayout = ({ children }: TaskLayoutProps) => {
             </Link>
           </h1>
           <Link to={routes.newTask()}>
-            <div className="flex justify-center bg-indigo-100 hover:bg-indigo-300 rounded border-0 cursor-pointer leading-loose  text-gray-600 py-1 px-4  font-semibold text-s uppercase no-underline tracking-wide">
+            <div className="text-s flex cursor-pointer justify-center rounded border-0 bg-indigo-100 py-1  px-4 font-semibold uppercase  leading-loose tracking-wide text-gray-600 no-underline hover:bg-indigo-300">
               + New Task
             </div>
           </Link>

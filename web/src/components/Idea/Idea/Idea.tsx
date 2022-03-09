@@ -51,38 +51,49 @@ const Idea = ({ idea }) => {
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">Idea {idea.id} Detail</h2>
+          <h2 className="rw-heading rw-heading-secondary">
+            Idea {idea.id} Detail
+          </h2>
         </header>
         <table className="rw-table">
           <tbody>
             <tr>
               <th>Id</th>
               <td>{idea.id}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Product</th>
               <td>{idea.product}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Title</th>
               <td>{idea.title}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Description</th>
               <td>{idea.description}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Value</th>
               <td>{idea.value}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Author</th>
               <td>{idea.author}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Vendor</th>
               <td>{idea.vendor}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Active</th>
               <td>{checkboxInputTag(idea.active)}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Finished</th>
               <td>{checkboxInputTag(idea.finished)}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Created at</th>
               <td>{timeTag(idea.createdAt)}</td>
             </tr>

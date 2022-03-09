@@ -18868,6 +18868,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-tailwindcss@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "prettier-plugin-tailwindcss@npm:0.1.8"
+  peerDependencies:
+    prettier: ">=2.2.0"
+  checksum: 915c70218a37b2aa3a8d040ff177a216835ed3fcb112f47e64d91a7de7b7a8f6a09e9b1416b96feb4ac2fe8fdde1a3dd4323eba6e0929ccc784b40010ea43cf4
+  languageName: node
+  linkType: hard
+
 "prettier@npm:2.5.1, prettier@npm:^2.2.1":
   version: 2.5.1
   resolution: "prettier@npm:2.5.1"
@@ -23350,6 +23359,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"web@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "web@npm:0.0.2"
+  checksum: e8a5c424dea387e473545d98c1e55150b3f79568c03c5c1a6d124bad6393ddaf5e7ab54696b03ec74e123b1e70ab7ef70da865508abdee9afb3be7598a8a0441
+  languageName: node
+  linkType: hard
+
 "web@workspace:web":
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
@@ -23363,12 +23379,15 @@ __metadata:
     autoprefixer: ^10.3.7
     postcss: ^8.3.11
     postcss-loader: ^6.2.0
+    prettier-plugin-tailwindcss: ^0.1.8
     prop-types: 15.7.2
     react: 17.0.2
     react-dom: 17.0.2
     react-icons: ^4.3.1
     recharts: ^2.1.6
     tailwindcss: ^3.0.0-alpha.2
+    web: ^0.0.2
+    workspace: ^0.0.1-preview.1
   languageName: unknown
   linkType: soft
 
@@ -23913,6 +23932,13 @@ __metadata:
   dependencies:
     microevent.ts: ~0.1.1
   checksum: 986406dbed4a2fd25d21e05e5a16a2db5051735df4011848366bb9488ecf19f44b43a90072171e509580fafd0565a7759543966496b8c18322efa5440dea1e6c
+  languageName: node
+  linkType: hard
+
+"workspace@npm:^0.0.1-preview.1":
+  version: 0.0.1-preview.1
+  resolution: "workspace@npm:0.0.1-preview.1"
+  checksum: 8c2a2d67ff7d02edbbdde587ca010e9e1fbd57e96faf8ce91092ad4ca94ff61f26342de113152e8e890e24a808376aef4453a9f99c5d96710e0fad26e39f21bf
   languageName: node
   linkType: hard
 

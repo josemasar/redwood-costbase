@@ -51,32 +51,41 @@ const Task = ({ task }) => {
     <>
       <div className="rw-segment">
         <header className="rw-segment-header">
-          <h2 className="rw-heading rw-heading-secondary">Task {task.id} Detail</h2>
+          <h2 className="rw-heading rw-heading-secondary">
+            Task {task.id} Detail
+          </h2>
         </header>
         <table className="rw-table">
           <tbody>
             <tr>
               <th>Id</th>
               <td>{task.id}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Idea id</th>
               <td>{task.ideaId}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Title</th>
               <td>{task.title}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Description</th>
               <td>{task.description}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Owner</th>
               <td>{task.owner}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Status</th>
               <td>{task.status}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Finished</th>
               <td>{checkboxInputTag(task.finished)}</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <th>Created at</th>
               <td>{timeTag(task.createdAt)}</td>
             </tr>

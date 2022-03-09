@@ -4,5 +4,5 @@ export const standard = () => {
     dashboard: {
       id: 42,
     },
-  };
-};
+  }
+}

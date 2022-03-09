@@ -7,8 +7,8 @@ const Pool = ({ tasks, title }) => {
 
   return (
     <>
-      <div className="p-3 bg-white rounded-md">
-        <h3 className="text-3xl text-gray-900 flex justify-center mb-6 ">
+      <div className="rounded-md bg-white p-3">
+        <h3 className="mb-6 flex justify-center text-3xl text-gray-900 ">
           {title}
         </h3>
         <ul className="bg-white">
@@ -16,9 +16,9 @@ const Pool = ({ tasks, title }) => {
             <li key={task.id}>
               <Link
                 to={routes.task({ id: task.id })}
-                className="block p-5 m-2 mb-4 bg-white rounded-md shadow"
+                className="m-2 mb-4 block rounded-md bg-white p-5 shadow"
               >
-                <div className="flex justify-between m-2">
+                <div className="m-2 flex justify-between">
                   <p className="text-xl font-bold leading-snug text-gray-900">
                     {task.title}
                   </p>

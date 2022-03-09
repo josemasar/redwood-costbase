@@ -3,13 +3,13 @@ import { Link, routes } from '@redwoodjs/router'
 const NavBar = () => {
   return (
     <>
-      <header className="shadow-sm bg-gray-900">
-        <div className="max-w-screen-xl p-4 mx-auto">
+      <header className="bg-gray-900 shadow-sm">
+        <div className="mx-auto max-w-screen-xl p-4">
           <div className="flex items-center justify-between space-x-4 lg:space-x-10">
             <div className="flex lg:w-0 lg:flex-1">
               <img
                 src="/static-files/costbase_logo.svg"
-                className="object-top h-16"
+                className="h-16 object-top"
                 alt="costbase logo"
               />
             </div>
@@ -29,15 +29,15 @@ const NavBar = () => {
               </a>
             </nav>
 
-            <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
+            <div className="hidden flex-1 items-center justify-end space-x-4 sm:flex">
               <Link to={routes.login()}>
-                <button className="px-5 py-2 text-sm font-medium text-white border border-blue-600 rounded-lg active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring">
+                <button className="rounded-lg border border-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75">
                   {' '}
                   Log in{' '}
                 </button>
               </Link>
               <Link to={routes.login()}>
-                <button className="px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg">
+                <button className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white">
                   {' '}
                   Sign up{' '}
                 </button>
