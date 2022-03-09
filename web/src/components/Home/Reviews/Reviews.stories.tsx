@@ -1,4 +1,4 @@
-import Reviews from '../../Reviews/Reviews'
+import Reviews from './Reviews'
 
 export const generated = () => {
   return <Reviews />
