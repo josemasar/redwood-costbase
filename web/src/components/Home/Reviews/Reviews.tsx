@@ -19,13 +19,13 @@ const Reviews = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
             <div>
               <img
-                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                src="https://josemasar.vercel.app/images/profile.jpg"
                 alt=""
                 className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
               <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p className="text-lg font-bold text-gray-700">Katie</p>
+                <p className="text-lg font-bold text-gray-700">Some One</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
                   Digital Marketing at Studio
                 </p>
@@ -81,15 +81,15 @@ const Reviews = () => {
 
             <div>
               <img
-                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                src="https://josemasar.vercel.app/images/profile.jpg"
                 alt=""
                 className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
               <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p className="text-lg font-bold text-gray-700">Katie</p>
+                <p className="text-lg font-bold text-gray-700">Josema Sar</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
-                  Digital Marketing at Studio
+                  Software Developer
                 </p>
                 <p className="mt-4 text-sm text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -142,13 +142,13 @@ const Reviews = () => {
             </div>
             <div>
               <img
-                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                src="https://josemasar.vercel.app/images/profile.jpg"
                 alt=""
                 className="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
               />
 
               <blockquote className="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p className="text-lg font-bold text-gray-700">Katie</p>
+                <p className="text-lg font-bold text-gray-700">JM</p>
                 <p className="mt-1 text-xs font-medium text-gray-500">
                   Digital Marketing at Studio
                 </p>
