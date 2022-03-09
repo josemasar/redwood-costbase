@@ -11,8 +11,8 @@ const Hero = () => {
             </h1>
 
             <p className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
-              Control cost of complex products. Collaborate and generate ideas
-              and prioritise tasks to achieve cost reduction targets.
+              Control cost of complex products. Collaborate, generate ideas and
+              prioritise tasks to achieve cost reduction targets.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">

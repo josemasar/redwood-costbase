@@ -6,6 +6,7 @@ import StartNow from 'src/components/Home/StartNow/StartNow'
 import Footer from 'src/components/Home/Footer/Footer'
 import Reviews from 'src/components/Home/Reviews/Reviews'
 import Stats from 'src/components/Home/Stats/Stats'
+import Method from 'src/components/Home/Method/Method'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <NavBar />
       <Hero />
       <Features />
+      <Method />
       <Reviews />
       <Stats />
       <StartNow />
