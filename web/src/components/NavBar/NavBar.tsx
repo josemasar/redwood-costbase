@@ -31,7 +31,7 @@ const NavBar = () => {
 
             <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
               <Link to={routes.login()}>
-                <button className="px-5 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-lg">
+                <button className="px-5 py-2 text-sm font-medium text-white border border-blue-600 rounded-lg active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring">
                   {' '}
                   Log in{' '}
                 </button>

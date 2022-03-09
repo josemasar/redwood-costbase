@@ -24,7 +24,13 @@ const StartNow = () => {
                 className="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
                 href="/get-started"
               >
-                Get Started
+                Start free trial
+              </a>
+              <a
+                href=""
+                className="block px-5 py-3 mt-4 font-medium text-blue-500 rounded-lg hover:text-blue-600 sm:mt-0"
+              >
+                Schedule a demo
               </a>
             </div>
           </div>

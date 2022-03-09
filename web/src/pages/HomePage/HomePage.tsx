@@ -4,6 +4,7 @@ import Hero from 'src/components/Home/Hero/Hero'
 import Features from 'src/components/Home/Features/Features'
 import StartNow from 'src/components/Home/StartNow/StartNow'
 import Footer from 'src/components/Home/Footer/Footer'
+import Reviews from 'src/components/Home/Reviews/Reviews'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <NavBar />
       <Hero />
       <Features />
+      <Reviews />
       <StartNow />
       <Footer />
     </>
