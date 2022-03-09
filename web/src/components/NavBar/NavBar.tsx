@@ -15,17 +15,17 @@ const NavBar = () => {
             </div>
 
             <nav className="hidden space-x-8 text-sm font-medium md:flex ">
-              <a className="text-gray-500" href="">
-                About
+              <a className="text-gray-300" href="#features">
+                Features
               </a>
-              <a className="text-gray-500" href="">
-                Blog
+              <a className="text-gray-300" href="#method">
+                Method
               </a>
-              <a className="text-gray-500" href="">
-                Projects
+              <a className="text-gray-300" href="#customers">
+                Customers
               </a>
-              <a className="text-gray-500" href="">
-                Contact
+              <a className="text-gray-300" href="#technology">
+                Technology
               </a>
             </nav>
 

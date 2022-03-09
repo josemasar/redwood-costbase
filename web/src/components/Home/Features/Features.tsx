@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <>
-      <section className="body-font bg-gray-100 text-gray-600">
+      <section id="features" className="body-font bg-gray-100 text-gray-600">
         <div className="container mx-auto px-5 py-24">
           <div className="mb-20 flex w-full flex-col flex-wrap items-center text-center">
             <h1 className="title-font mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">
