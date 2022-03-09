@@ -4,10 +4,10 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: {
-        wave: "url('../public/wave-haikei.svg')",
-        layered: "url('../public/layered.svg')",
-      },
+      // backgroundImage: {
+      //   wave: "url('../public/wave-haikei.svg')",
+      //   layered: "url('../public/layered.svg')",
+      // },
     },
   },
   plugins: [],
