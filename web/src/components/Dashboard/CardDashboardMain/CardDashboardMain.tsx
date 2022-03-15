@@ -1,7 +1,7 @@
-const CardDashboard1 = ({ ideas, tasks }) => {
-  const sumIdeasValue = ideas.reduce((a, { value }) => a + value, 0)
-  const activeIdeas = ideas.filter((x) => x.active)
-  const sumTasksValue = activeIdeas.reduce((a, { value }) => a + value, 0)
+const CardDashboard1 = ({ ideas }) => {
+  //const sumIdeasValue = ideas.reduce((a, { value }) => a + value, 0)
+  //const activeIdeas = ideas.filter((x) => x.active)
+  //const sumTasksValue = activeIdeas.reduce((a, { value }) => a + value, 0)
   return (
     <div>
       You can use this report to see the{' '}

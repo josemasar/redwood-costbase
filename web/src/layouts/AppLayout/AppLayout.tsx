@@ -1,13 +1,10 @@
-import FrameAdmin from 'src/components/FrameAdmin'
+import NavBarAdmin from 'src/components/NavBarAdmin'
 
-type AppLayoutProps = {
-  children?: React.ReactNode
-}
-
-const AppLayout = ({ children }: AppLayoutProps) => {
+const AppLayout = ({ children }) => {
   return (
     <>
-      <FrameAdmin>{children}</FrameAdmin>
+      <NavBarAdmin />
+      <div className="ml-20">{children}</div>
     </>
   )
 }

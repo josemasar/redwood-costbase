@@ -1,6 +1,8 @@
-import Pool from '../Pool/Pool'
+import Pool from '../Pool'
+import type { FindTaskById } from 'types/graphql'
+import type { CellSuccessProps } from '@redwoodjs/web'
 
-const Kanban = ({ tasks }) => {
+const Kanban = ({ tasks }: CellSuccessProps<FindTaskById>) => {
   return (
     <>
       <div className="mt-4">
