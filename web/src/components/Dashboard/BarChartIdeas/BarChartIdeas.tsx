@@ -1,5 +1,3 @@
-import '@shopify/polaris/build/esm/styles.css'
-import { Card } from '@shopify/polaris'
 import { BarChart, Bar, YAxis, Tooltip } from 'recharts'
 
 const BarChartIdeas = () => {
@@ -27,13 +25,11 @@ const BarChartIdeas = () => {
 
   return (
     <div className="w-auto">
-      <Card title="Ideas" sectioned>
-        <BarChart width={350} height={130} data={dataChart}>
-          <Bar dataKey="rawValue" fill="#C62368" />
-          <YAxis axisLine={false} tickMargin={8} tickLine={false} />
-          <Tooltip />
-        </BarChart>
-      </Card>
+      <BarChart width={350} height={130} data={dataChart}>
+        <Bar dataKey="rawValue" fill="#C62368" />
+        <YAxis axisLine={false} tickMargin={8} tickLine={false} />
+        <Tooltip />
+      </BarChart>
     </div>
   )
 }
