@@ -3,8 +3,8 @@ import { Link, routes } from '@redwoodjs/router'
 const NavBar = () => {
   return (
     <>
-      <header className="bg-gray-900 shadow-sm">
-        <div className="mx-auto max-w-screen-xl p-4">
+      <header className="blur-backdrop-filter  sticky top-0 bg-gray-900 bg-opacity-50 bg-clip-padding shadow-sm">
+        <div className="mx-auto h-20 max-w-screen-xl p-4">
           <div className="flex items-center justify-between space-x-4 lg:space-x-10">
             <div className="flex lg:w-0 lg:flex-1">
               <img

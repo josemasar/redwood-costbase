@@ -39,4 +39,10 @@
     border border-gray-200 bg-gray-200 dark:border-gray-800
     dark:bg-gray-800;
   }
+
+  /* Frosted Navbar */
+  .blur-backdrop-filter {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
 }
