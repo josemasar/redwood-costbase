@@ -25,6 +25,7 @@ const truncate = (text) => {
   return output
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const jsonTruncate = (obj) => {
   return truncate(JSON.stringify(obj, null, 2))
 }
@@ -65,63 +66,36 @@ const IdeasList = ({ ideas }) => {
   return (
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+        <div className=" inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
           <div className="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Id
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Product
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Title
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Value
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Author
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Vendor
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Active
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Finished
                   </th>
-                  <th
-                    scope="col"
-                    className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                  >
+                  <th scope="col" className="table-th">
                     Created at
                   </th>
                   <th>&nbsp;</th>
@@ -132,45 +106,29 @@ const IdeasList = ({ ideas }) => {
               <tbody className="divide-y divide-gray-200 bg-white">
                 {ideas.map((idea) => (
                   <tr key={idea.id}>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.id)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.product)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.title)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.value)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.author)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {truncate(idea.vendor)}
-                    </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
+                    <td className="table-td">{truncate(idea.id)}</td>
+                    <td className="table-td">{truncate(idea.product)}</td>
+                    <td className="table-td">{truncate(idea.title)}</td>
+                    <td className="table-td">{truncate(idea.value)}</td>
+                    <td className="table-td">{truncate(idea.author)}</td>
+                    <td className="table-td">{truncate(idea.vendor)}</td>
+                    <td className="table-td">
                       {checkboxInputTag(idea.active)}
                     </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
+                    <td className="table-td">
                       {checkboxInputTag(idea.finished)}
                     </td>
-                    <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                      {timeTag(idea.createdAt)}
-                    </td>
-                    <td className="whitespace-nowrap py-4 text-xl font-medium">
+                    <td className="table-td">{timeTag(idea.createdAt)}</td>
+                    <td className="table-td">
                       <Link
                         to={routes.idea({ id: idea.id })}
                         title={'Show idea ' + idea.id + ' detail'}
                         className="text-indigo-600 hover:text-indigo-900"
                       >
-                        <span className="inline-flex rounded-full bg-indigo-100 px-2 font-semibold">
-                          Show
-                        </span>
+                        <span className="button_show">Show</span>
                       </Link>
                     </td>
-                    <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
+                    <td className="button_edit_delete">
                       <Link
                         to={routes.editIdea({ id: idea.id })}
                         title={'Edit idea ' + idea.id}
@@ -179,7 +137,7 @@ const IdeasList = ({ ideas }) => {
                         <RiEdit2Fill />
                       </Link>
                     </td>
-                    <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
+                    <td className="button_edit_delete">
                       <button
                         type="button"
                         title={'Delete idea ' + idea.id}

@@ -27,6 +27,7 @@ const truncate = (text) => {
   return output
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const jsonTruncate = (obj) => {
   return truncate(JSON.stringify(obj, null, 2))
 }
@@ -73,52 +74,28 @@ const TasksList = ({ tasks }) => {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Id
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Idea id
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Title
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Description
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Owner
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Status
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Finished
                     </th>
-                    <th
-                      scope="col"
-                      className="px-2 py-3 text-left text-2xl font-bold uppercase tracking-wider text-gray-500"
-                    >
+                    <th scope="col" className="table-th">
                       Created at
                     </th>
                     <th>&nbsp;</th>
@@ -129,42 +106,26 @@ const TasksList = ({ tasks }) => {
                 <tbody className="divide-y divide-gray-200 bg-white">
                   {tasks.map((task) => (
                     <tr key={task.id}>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.id)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.ideaId)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.title)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.description)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.owner)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {truncate(task.status)}
-                      </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
+                      <td className="table-td">{truncate(task.id)}</td>
+                      <td className="table-td">{truncate(task.ideaId)}</td>
+                      <td className="table-td">{truncate(task.title)}</td>
+                      <td className="table-td">{truncate(task.description)}</td>
+                      <td className="table-td">{truncate(task.owner)}</td>
+                      <td className="table-td">{truncate(task.status)}</td>
+                      <td className="table-td">
                         {checkboxInputTag(task.finished)}
                       </td>
-                      <td className="whitespace-nowrap px-2 py-4 text-xl text-gray-500">
-                        {timeTag(task.createdAt)}
-                      </td>
-                      <td className="whitespace-nowrap py-4 text-xl font-medium">
+                      <td className="table-td">{timeTag(task.createdAt)}</td>
+                      <td className="table-td">
                         <Link
                           to={routes.task({ id: task.id })}
                           title={'Show task ' + task.id + ' detail'}
                           className="text-indigo-600 hover:text-indigo-900"
                         >
-                          <span className="inline-flex rounded-full bg-indigo-100 px-2 font-semibold">
-                            Show
-                          </span>
+                          <span className="button_show">Show</span>
                         </Link>
                       </td>
-                      <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
+                      <td className="button_edit_delete">
                         <Link
                           to={routes.editTask({ id: task.id })}
                           title={'Edit task ' + task.id}
@@ -173,7 +134,7 @@ const TasksList = ({ tasks }) => {
                           <RiEdit2Fill />
                         </Link>
                       </td>
-                      <td className="whitespace-nowrap px-3 py-4 text-2xl font-medium">
+                      <td className="button_edit_delete">
                         <button
                           type="button"
                           title={'Delete task ' + task.id}
