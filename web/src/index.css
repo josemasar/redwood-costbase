@@ -23,8 +23,8 @@
 
   .sidebar-icon {
     @apply relative mx-auto mb-2 mt-2 flex h-12 w-12 cursor-pointer
-    items-center justify-center rounded-3xl bg-gray-800 text-green-500 shadow-lg transition-all
-    duration-300 ease-linear hover:rounded-xl hover:bg-green-600;
+    items-center justify-center rounded-3xl bg-gray-800 text-emerald-500 shadow-lg transition-all
+    duration-300 ease-linear hover:rounded-xl hover:bg-emerald-600;
   }
 
   .sidebar-tooltip {

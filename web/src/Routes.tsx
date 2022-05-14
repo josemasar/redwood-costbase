@@ -20,8 +20,8 @@ const Routes = () => {
       <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
       <Route path="/" page={HomePage} name="home" />
       <Private unauthenticated="login">
-        <Route path="/dashboard" page={DashboardPage} name="dashboard" />
         <Set wrap={IdeasLayout}>
+          <Route path="/dashboard" page={DashboardPage} name="dashboard" />
           <Route path="/dashboard/ideas/new" page={IdeaNewIdeaPage} name="newIdea" />
           <Route path="/dashboard/ideas/{id:Int}/edit" page={IdeaEditIdeaPage} name="editIdea" />
           <Route path="/dashboard/ideas/{id:Int}" page={IdeaIdeaPage} name="idea" />
